@@ -4,7 +4,7 @@ This is a FAQ for the project assessments only (i.e., Pacman assessment projects
 
 For general questions about the course, refer to the other FAQs available under [Resources](https://edstem.org/courses/6081/resources).
 
-As any FAQ page, this page is always "under construction". As we realize that some questions become common, we add them here. So, bookmark it and check it regularly, particularly when you have a doubt and you suspect it may have been answered before!
+As any FAQ page, this page is always "under construction". As we realise that some questions become common, we add them here. So, bookmark it and check it regularly, particularly when you have a doubt and you suspect it may have been answered before!
 
 - [Git \& GitHub FAQ](#git--github-faq)
   - [Git, GitHub, what is that?](#git-github-what-is-that)
@@ -21,6 +21,8 @@ As any FAQ page, this page is always "under construction". As we realize that so
 
 We will use proper (git) version control in all our programming projects. This is totally standard practice in the industry and you would have seen that in previous courses (SEF and SEPT at least). Said so, if you want to refresh or have a quick intro to it, here are two resources I found useful:
 
+- [Learning Git and GitHub](https://www.linkedin.com/learning/learning-git-and-github-14213624/): An excellent course on on LinkedIn Learning Links introducing Git & Github.
+- [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4).
 - [30' video on Git & GitHub](https://youtu.be/jG4Vs81kMlc).
 - [GitHub Guides](https://guides.github.com/).
 - [Git \& GitHub Tutorial & Reference @ Javatpoint](https://www.javatpoint.com/git).
@@ -138,4 +140,7 @@ Read [this GitHub page](https://docs.github.com/en/github/setting-up-and-managin
 
 ## Commits not correctly associated to my GitHub account, why?
 
-Please [check this](https://docs.github.com/en/github/committing-changes-to-your-project/troubleshooting-commits/why-are-my-commits-linked-to-the-wrong-user) and fix it so we can know the commit was *yous*. Otherwise we may get your contributions wrong and risk getting lower marks or delaying your marking.
+Please check [doc in GitHub](https://docs.github.com/en/github/committing-changes-to-your-project/troubleshooting-commits/why-are-my-commits-linked-to-the-wrong-user) and also [this post](https://crunchify.com/how-to-set-github-user-name-and-user-email-per-repository-different-config-for-different-repository/) if you want to set-up different GitHub accounts for different users.
+
+Please fix it so we can know the commit was *yous*. Otherwise we may get your contributions wrong and risk getting lower marks or delaying your marking.
+

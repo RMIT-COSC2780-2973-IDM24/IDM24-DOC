@@ -3,7 +3,7 @@
 As any FAQ page, this page is always "under construction”. As we realize that some questions become common, we add them here…
 
 - [Course FAQ - Intelligent Decision Making 2023](#course-faq---intelligent-decision-making-2023)
-- [GENERAL](#general)
+- [ADMINISTRATION](#administration)
   - [Why this FAQ?](#why-this-faq)
   - [Communication policy: I have a question, can I email you?](#communication-policy-i-have-a-question-can-i-email-you)
   - [Attendance: do I need to attend workshops?](#attendance-do-i-need-to-attend-workshops)
@@ -11,6 +11,12 @@ As any FAQ page, this page is always "under construction”. As we realize that 
   - [Course Survey Experience: what? why?](#course-survey-experience-what-why)
     - [Some links on the topic](#some-links-on-the-topic)
   - [I have a question about the course, but it is not here!](#i-have-a-question-about-the-course-but-it-is-not-here)
+- [COURSE GENERAL](#course-general)
+  - [Is this course theoretical or practical?](#is-this-course-theoretical-or-practical)
+  - [What programming languages are used?](#what-programming-languages-are-used)
+  - [Are assignments individual or in groups?](#are-assignments-individual-or-in-groups)
+  - [What is the overall difficulty of the topics?](#what-is-the-overall-difficulty-of-the-topics)
+  - [What is the relation of this course with COSC1125/1127 Artificial Intelligence Course?](#what-is-the-relation-of-this-course-with-cosc11251127-artificial-intelligence-course)
 - [DISCUSSION FORUM \& FORUM ETIQUETTE](#discussion-forum--forum-etiquette)
 - [WORKSHOP](#workshop)
   - [Are attendance to the workshop mandatory?](#are-attendance-to-the-workshop-mandatory)
@@ -26,10 +32,9 @@ As any FAQ page, this page is always "under construction”. As we realize that 
   - [Academic Integrity? What is that?](#academic-integrity-what-is-that)
 - [TECHNICAL](#technical)
   - [Cannot access the Google Form, says I need permission](#cannot-access-the-google-form-says-i-need-permission)
-  - [Why are my commits linked to the wrong user?](#why-are-my-commits-linked-to-the-wrong-user)
+  - [Questions about GIT?](#questions-about-git)
 
-# GENERAL
-
+# ADMINISTRATION
 
 ## Why this FAQ?
 
@@ -43,7 +48,7 @@ This is the list of usual questions that are asked about the course. A FAQ like 
 
 ## Attendance: do I need to attend workshops?
 
-YES! This is a <span style="text-decoration:underline;">research-oriented seminar-style</span> advanced course, which means it requires on campus attendance to workshops.
+**YES!** This is a <span style="text-decoration:underline;">research-oriented seminar-style</span> advanced course, which means it requires on campus attendance to workshops.
 
 Workshops are not lectures where the instructor delivers the content. Instead, we discuss together each week content at workshops, we do presentations, execute drills, etc. So, on campus personal presence is necessary. Also, a component of the assessment is assigned to _participation_ during workshops, presentation, and leadership. To participate actively will surely require being there. :-)
 
@@ -54,7 +59,7 @@ Note that there is only 1 workshop session of 3hrs, and late in the day.
 
 ## What are the dates for this semester?
 
-Here is the [Academic Calendar for 2023](https://www.rmit.edu.au/students/my-course/important-dates/2023/he).
+Here is the [Academic Calendar for 2024](https://www.rmit.edu.au/students/my-course/important-dates/2024/he).
 
 ## Course Survey Experience: what? why?
 
@@ -80,6 +85,7 @@ Now, there has been a lot of debate whether these surveys are a good idea, or if
 
 > "_Measuring the teacher by how well the student did in the next course is an important part of this experiment. Previous papers, says Pellizzari, compared student ratings to student grades within that same course. An easy-A prof may earn five stars in return for handing out good grades. But this leniency, his research suggests, does the students no long-term favors._"
 
+
 Two more articles with findings on the issue are:
 
 1. [_Zero Correlation Between Evaluations and Learning - New study could be another nail in the coffin for the validity of student evaluations of teaching_](http://tinyurl.com/hdd7979) 
@@ -104,6 +110,47 @@ I think as a University student and future graduate, you should know about all t
 
 If you have any questions about the course that you think other fellow students may be also interested in learning, please post it in the forum!
 
+# COURSE GENERAL
+
+## Is this course theoretical or practical?
+
+**Both!** I would say that it is ~70% practical and ~30% theoretical. There will be significant programming, but not in classical "mainstream" programming languages like Java or Python. Instead, you will learn to do constraint programming in declarative logic and constraint-based programming languages. These languages build on top of theoretical notions and frameworks, like _logic_ and _set theory_. Thus, we will talk about formulas, constraints, variables, models, satisfiability, etc.
+
+## What programming languages are used?
+
+It depends on the edition. For 2024 we will use [SWI-Prolog](https://www.swi-prolog.org/) and [Clingo](https://potassco.org/clingo/) Answer Set Programming. We will also use Python.
+
+Note that you are not meant to know these non-standard languages: it is one of the aims of the course that you learn them! :-)
+
+## Are assignments individual or in groups?
+
+There will be several individual assessments (including a programming assignment) as well as major group project.
+
+## What is the overall difficulty of the topics?
+
+It is hard to answer this question, as it will depend a lot on the background, motivation, and dedication of each student.
+
+However, one could argue that the course is more towards the challenging/difficult spectrum because:
+
+1. It is an advanced course, expected to be taken by postgraduate students and last year (good) undergraduate students.
+2. It deals with abstract mathematical concepts, like logical models and formulas, recursion and self-reference, complex and infinite objects.
+3. It requires problem solving skills to solve combinatorial decision making problems.
+4. It is run by a demanding teacher who pushes students hard.
+
+One initial test is to read Part I.1 and I.2 (Sets & Logic) in the Book of Proofs:
+
+https://www.people.vcu.edu/~rhammack/BookOfProof/
+
+and see how it goes. If you don't feel comfortable with that, then this may be a signal :-)
+
+Another objective reference of difficulty could be the grade distribution. In general, the course has had 15/20% HDs and ~20/25% NN. So, it is hard to get an HD and if one doesn't do the work to a good standard it is easy to fail it. :-)
+
+Nonetheless, you are happy to come to chat with me and we can discuss your _own case_. Please drop by my office or send me an email for an appointment; I am usually in my office available on Mondays, Wednesdays and Fridays. Come!
+
+## What is the relation of this course with COSC1125/1127 Artificial Intelligence Course?
+
+Basically this is one sub-topic of the AI course expanded into a whole course. Thus we go much much deeper. This means that if you had taken (and passed!) AI before, then you will probably understand many things much faster. The natural progression is AI (general course) --> IDM.
+
 # DISCUSSION FORUM & FORUM ETIQUETTE
 
 Please see dedicated [Forum FAQ & Etiquette](https://docs.google.com/document/d/1HdrY91LIPRZOEni_jsCwmN8Oc8MrUzljen6qHzbtQeU/edit?usp=sharing) for the forum.
@@ -124,7 +171,9 @@ There are no lectures in this course. Face-to-face sessions are interactive work
 
 ## When are lecture/workshop recordings available?
 
-Never for this course: there is no recording done and attendance is expected to every workshop (only 1 per week). Also there is no content delivered by the instructor in the standard “lecture” type, so there will be no recordings for this course.
+Being an interactive student-driven workshop, there is no recordings for the sessions. As stated in [this question](#attendance-do-i-need-to-attend-workshops-2), attendance is expected to every workshop (only once per week).
+
+In any case, there is no classical “lecture” delivered by the instructor as in other courses, and we do not record student presentations, as they are assessment and not material for release in the "wild".
 
 ## So, when & where are the workshops?
 
@@ -136,7 +185,7 @@ There is only one workshop session for this small course. If you are taking this
 
 ## Should I bring my laptop to the workshops?
 
-Definitively! Yes, please make sure you bring your laptop. We will be doing practical hands-on work in workshops, so it is important you are able to execute them.
+**Definitively!** Yes, please make sure you bring your laptop. We will be doing practical hands-on work in workshops, so it is important you are able to execute them.
 
 # ASSESSMENTS
 
@@ -174,6 +223,6 @@ If you see something like this:
 
 then chances are you are not correctly logged into your RMIT account or you are logged with your private Google account and your browser cannot distinguish. Either open it an incognito browser window or make sure you are logged into your RMIT account. There is nothing I can do from my side if you don’t access the form with the right authentication credentials.
 
-## Why are my commits linked to the wrong user?
+## Questions about GIT?
 
-Check this [doc in GitHub](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/troubleshooting-commits/why-are-my-commits-linked-to-the-wrong-user) and also [this post](https://crunchify.com/how-to-set-github-user-name-and-user-email-per-repository-different-config-for-different-repository/) if you want to set-up different GitHub accounts for different users.
+We have a dedicated [GIT FAQ](FAQ-GIT.md) for you.. :-)
