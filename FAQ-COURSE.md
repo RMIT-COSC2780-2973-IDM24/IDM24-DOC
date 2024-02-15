@@ -69,7 +69,7 @@ The fact is that the Course Survey is **used to evaluate us, academic staff, in 
 
 In the survey, each answer is a score between _1 (strongly disagree)_ an _5 (strongly agree)_, **but only scores 4 and 5 are considered positive feedback towards the GTS.** What many students don't know (fair enough) is that scores 4 and 5 (positives) are compared against scores 1-3, yes including 3! This means that, basically, a 3 is considered a negative score, _not_ a neutral one. So, you should take that into consideration when answering the survey, as for many students this is not what they were expecting (they may have been expecting a neutral that would "not be counted").
 
-Nevertheless, regardless of how student feedback is used by Universities, in my view, **the best use of student feedback is for the students themselves**! What I mean is that it is very useful for prospective students to know what previous fellow students have said about the course in general and the lecturer. This allows students to set their mind in the right way, plan ahead and prepare, and build accurate expectations. Basically, _would you recommend this course to a friend? Would you recommend the lecturer?_ _While the results are generally not given to students, **_I personally show my previous results for my courses_**. [Here is for this course](https://docs.google.com/document/d/1xwOn0NaVwQYeBzmGsNdmNFBT_esr3ByLjkhtrsWM62k/edit?usp=sharing).
+Nevertheless, regardless of how student feedback is used by Universities, in my view, **the best use of student feedback is for the students themselves**! What I mean is that it is very useful for prospective students to know what previous fellow students have said about the course in general and the lecturer. This allows students to set their mind in the right way, plan ahead and prepare, and build accurate expectations. Basically, _would you recommend this course to a friend? Would you recommend the lecturer?_ _While the results are generally not given to students, **_I personally show my previous results for my courses_**. [Here is for this course](FAQ-REVIEWS.md).
 
 I particular, **I am very interested in the feedback** of those who have participated in the course actively, by attending lectures, tutorials, using the web page, etc. **Your contribution is very meaningful for future students, so help them out! :-)**
 
@@ -132,10 +132,11 @@ It is hard to answer this question, as it will depend a lot on the background, m
 
 However, one could argue that the course is more towards the challenging/difficult spectrum because:
 
-1. It is an advanced course, expected to be taken by postgraduate students and last year (good) undergraduate students.
-2. It deals with abstract mathematical concepts, like logical models and formulas, recursion and self-reference, complex and infinite objects.
-3. It requires problem solving skills to solve combinatorial decision making problems.
-4. It is run by a demanding teacher who pushes students hard.
+1. It is an *advanced course*, expected to be taken by postgraduate students and last year (good) undergraduate students.
+2. It deals with *abstract mathematical concepts*, like logical models and formulas, recursion and self-reference, complex and infinite objects.
+3. It requires *problem solving skills* to solve combinatorial decision making problems.
+4. It requires *self-driven attitude*: there is significant pre-reading before workshops. It is not a classical undergraduate course where the instructors yields all the knowledge during the session.
+5. It is run by a *demanding teacher* who pushes students hard. :-)
 
 One initial test is to read Part I.1 and I.2 (Sets & Logic) in the Book of Proofs:
 
@@ -144,6 +145,8 @@ https://www.people.vcu.edu/~rhammack/BookOfProof/
 and see how it goes. If you don't feel comfortable with that, then this may be a signal :-)
 
 Another objective reference of difficulty could be the grade distribution. In general, the course has had 15/20% HDs and ~20/25% NN. So, it is hard to get an HD and if one doesn't do the work to a good standard it is easy to fail it. :-)
+
+In general, if you are looking for a course to that is not too demanding (maybe because you are already taking difficult courses in the semester), then this may not be a good choice. However, if you have motivation and time space to dedicate, I suspect you may learn a way of thinking and solving programs that you have never been exposed to before.
 
 Nonetheless, you are happy to come to chat with me and we can discuss your _own case_. Please drop by my office or send me an email for an appointment; I am usually in my office available on Mondays, Wednesdays and Fridays. Come!
 
