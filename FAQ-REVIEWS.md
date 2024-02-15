@@ -1,10 +1,10 @@
 # Qualitative Comments from students
 
-While universities use student feedback to judge the quality of a course and/or teacher (see [this](FAQ-COURSE.md#course-survey-experience-what-why)) about that), in my view, **the best use of such feedback is for the students themselves**! What I mean is that it is very useful for _prospective students_ to know what previous fellow students have said about the course in general and the lecturer. This allows students to set their mind in the right way, judge if a course is suitable for them, plan ahead and prepare, and build accurate expectations. Basically, _would you recommend this course to a friend? If so, for which students would you recommend the course? Would you recommend the lecturer?_
+While universities use student feedback to judge the quality of a course and/or teacher (see [this](FAQ-COURSE.md#course-survey-experience-what-why) about that...), in my view, **the best use of such feedback is for the students themselves**! You say, _what?_ What I mean is that I believe it is very useful for _prospective students_ to know what previous fellow students have said about the course in general and the lecturer. This allows students considering taking the course to set their mind in the right way, judge if a course is suitable for them, plan ahead and prepare, and build accurate expectations. Basically, _would you recommend this course to a friend? If so, for which students would you recommend the course? Would you recommend the lecturer?_
 
-While the university does not release the results to students, I personally disclose them for the above reasons. Here it is for IDM!
+While the university does not release the results to students, I personally share them for the above reasons. Note this is quite generous from me and I have no obligation to do it.
 
-**DISCLAIMER:** please note that feedback relates to each edition given, so some things may not apply anymore as the course usually changes from edition to edition (sometimes due to previous valuable feedback!). However, **I hope you find it useful and it gives a sense of what to expect.**
+**DISCLAIMER:** please consider that feedback relates to each edition given, so some things may not apply anymore as the course usually changes from edition to edition (sometimes due to previous valuable feedback!). Also remember that each student is unique, so your situation, perspective, and aims, may be different from others: what others found amazing may be boring for you; and what others found horrible may not bother you or you may even like it!  However, **I hope you find it useful and it gives a sense of what to expect.**
 
 Here we go...
 
