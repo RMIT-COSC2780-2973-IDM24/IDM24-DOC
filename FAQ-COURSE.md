@@ -250,7 +250,7 @@ There is only one workshop session for this small course. If you are taking this
 
 ## Should I bring my laptop to the workshops?
 
-**Definitively!** Yes, please make sure you bring your laptop. We will be doing practical hands-on work in workshops, so it is important you are able to execute them.
+**Definitively!** Yes, please make sure you bring your laptop, the course will run in BOYD (bring your own device) mode. We will be doing practical hands-on work in workshops, so it is important you are able to execute them.
 
 # ASSESSMENTS
 
