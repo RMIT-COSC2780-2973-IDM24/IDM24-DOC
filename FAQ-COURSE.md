@@ -1,8 +1,8 @@
-# Course FAQ - Intelligent Decision Making 2023
+# Course FAQ - Intelligent Decision Making 2024
 
 As any FAQ page, this page is always "under construction”. As we realize that some questions become common, we add them here…
 
-- [Course FAQ - Intelligent Decision Making 2023](#course-faq---intelligent-decision-making-2023)
+- [Course FAQ - Intelligent Decision Making 2024](#course-faq---intelligent-decision-making-2024)
 - [ADMINISTRATION](#administration)
   - [Why this FAQ?](#why-this-faq)
   - [Communication policy: I have a question, can I email you?](#communication-policy-i-have-a-question-can-i-email-you)
