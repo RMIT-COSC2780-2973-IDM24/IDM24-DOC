@@ -7,9 +7,15 @@ As any FAQ page, this page is always "under construction”. As we realize that 
   - [Why this FAQ?](#why-this-faq)
   - [Communication policy: I have a question, can I email you?](#communication-policy-i-have-a-question-can-i-email-you)
   - [Attendance: do I need to attend workshops?](#attendance-do-i-need-to-attend-workshops)
+  - [I work outside and have other commitments, should I take this course?](#i-work-outside-and-have-other-commitments-should-i-take-this-course)
+  - [Can I attend in-person workshops remotely?](#can-i-attend-in-person-workshops-remotely)
+  - [Will there be workshops recordings?](#will-there-be-workshops-recordings)
   - [What are the dates for this semester?](#what-are-the-dates-for-this-semester)
   - [Course Survey Experience: what? why?](#course-survey-experience-what-why)
     - [Some links on the topic](#some-links-on-the-topic)
+  - [I want to discuss something face-to-face, can I?](#i-want-to-discuss-something-face-to-face-can-i)
+  - [I am enrolled in COSC2973 (UGRD) but my Canvas says COSC2780 (PGRD). Is everything OK?](#i-am-enrolled-in-cosc2973-ugrd-but-my-canvas-says-cosc2780-pgrd-is-everything-ok)
+  - [I enrolled late in the course, can you explain me about X, Y, and Z about the course? What should I do now?](#i-enrolled-late-in-the-course-can-you-explain-me-about-x-y-and-z-about-the-course-what-should-i-do-now)
   - [I have a question about the course, but it is not here!](#i-have-a-question-about-the-course-but-it-is-not-here)
 - [COURSE GENERAL](#course-general)
   - [Is this course theoretical or practical?](#is-this-course-theoretical-or-practical)
@@ -29,7 +35,13 @@ As any FAQ page, this page is always "under construction”. As we realize that 
 - [ASSESSMENTS](#assessments)
   - [I was never asked these questions!](#i-was-never-asked-these-questions)
   - [Can I ask questions on an assignment/assessment in the forum?](#can-i-ask-questions-on-an-assignmentassessment-in-the-forum)
+  - [Are assessments individual or team-based?](#are-assessments-individual-or-team-based)
   - [Academic Integrity? What is that?](#academic-integrity-what-is-that)
+  - [In a code assignment/project, how do I make sure I do not go against academic integrity?](#in-a-code-assignmentproject-how-do-i-make-sure-i-do-not-go-against-academic-integrity)
+  - [I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get a 2-3 day extension?](#i-am-very-busy-with-other-commitments-work-other-subjects-travel-etc-and-may-not-be-able-to-make-the-deadline-can-i-get-a-2-3-day-extension)
+  - [Can I submit late? What is the penalty?](#can-i-submit-late-what-is-the-penalty)
+  - [What is the policy on Special Consideration (SPC)?](#what-is-the-policy-on-special-consideration-spc)
+  - [I have a SPC for a project, how does it work?](#i-have-a-spc-for-a-project-how-does-it-work)
 - [TECHNICAL](#technical)
   - [Cannot access the Google Form, says I need permission](#cannot-access-the-google-form-says-i-need-permission)
   - [Questions about GIT?](#questions-about-git)
@@ -38,13 +50,16 @@ As any FAQ page, this page is always "under construction”. As we realize that 
 
 ## Why this FAQ?
 
-This is the list of usual questions that are asked about the course. A FAQ like this can help you find the answer right away. There are also many questions that can shed some light on the rationale of certain policies or approaches to the course. Also, by having an FAQ I am able to provide consistent and uniform answers to everyone. Of course, if you cannot find your question here, then you are invited to post it in the discussion forum. As questions become more common or usual, I add them to this list. So, maybe your new question can make it to the list! :-)
+This question is already answered in the first question in this [FAQ](FAQ-COURSE.md). ;-)
+
+If, somehow, you managed to get out of the [self-reference](https://en.wikipedia.org/wiki/Self-reference), then this is the list of usual questions that are asked about the course. A FAQ like this one can help you find answer to common questions right away. Also, by having an FAQ I am able to provide consistent and uniform answers to everyone. Some questions that can shed some light on the rationale of certain policies or approaches to the course.
+
+Of course, if you cannot find your question here, then you are invited to post it in the discussion forum. As questions become more common or usual, I add them to this list. So, maybe your new question can make it to the list! :-)
 
 
 ## Communication policy: I have a question, can I email you?
 
-**Communication/email policy:** Except for personal issues, all electronic communication must be directed to the [EdStem Discussion Forum](https://edstem.org/au/courses/11583). I only use email for limited communications regarding **personal circumstances** (in which case email is just used to arrange a face-to-face meeting). In particular, I will not respond by e-mail to any requests to clarify lecture, tutorial, or assignment questions. Please use workshops and discussion forums for all such questions so that a _fair course is run_ and all other fellow students can benefit as well. Do not be afraid to post any question (of course, as long as it is a proper question: just asking for “help” or providing solutions/insights on assignments is not acceptable, as it may amount to plagiarism), no question is stupid! To benefit from others, then, please ensure that you _regularly check_ the course website and attend lectures and tutorials.
-
+**Communication/email policy:** Except for personal issues, all electronic communication must be directed to the [EdStem Discussion Forum](https://edstem.org/au/courses/15661/). I only use email for limited communications regarding **personal circumstances** (in which case email is just used to arrange a face-to-face meeting). In particular, I will not respond by e-mail to any requests to clarify lecture, tutorial, or assignment questions. Please use workshops and discussion forums for all such questions so that a _fair course is run_ and all other fellow students can benefit as well. Do not be afraid to post any question (of course, as long as it is a proper question: just asking for “help” or providing solutions/insights on assignments is not acceptable, as it may amount to plagiarism), no question is stupid! To benefit from others, then, please ensure that you _regularly check_ the course website and attend lectures and tutorials.
 
 ## Attendance: do I need to attend workshops?
 
@@ -56,6 +71,20 @@ In addition, workshops will be the place to discuss your projects/assignments an
 
 Note that there is only 1 workshop session of 3hrs, and late in the day.
 
+## I work outside and have other commitments, should I take this course?
+
+A major distinctive feature of this course is the in-person work during the 3hrs weekly workshop, and the contributions and work in each workshop do count towards your participation marks. So, if you cannot make it to the workshops, then we recommend you look for alternative courses that you can indeed attend or can be taken without attendance.
+
+## Can I attend in-person workshops remotely?
+
+No. RMIT is committed to on-campus experience and there is no hybrid teaching for this course. In any case, given the interactive nature of this course, this wouldn't make any sense for this particular course.
+
+Please refer to [this question](#attendance-do-i-need-to-attend-workshops).
+
+## Will there be workshops recordings?
+
+No. All will be in-person and highly interactive. It wouldn't make any sense anyways, but since students will drive the sessions we wouldn't record them even if for privacy and non-exposure reasons.
+
 
 ## What are the dates for this semester?
 
@@ -63,7 +92,7 @@ Here is the [Academic Calendar for 2024](https://www.rmit.edu.au/students/my-cou
 
 ## Course Survey Experience: what? why?
 
-The **usefulness of student course surveys** has been the subject of **much debate** in the academia and whether it is a useful tool to improve the quality of teaching or just a mechanism that leads _lower teaching standards_ (and _grade inflation_ ). If you want to read more about this debate, see the articles I posted at the bottom. 
+The **usefulness of student course surveys** has been the subject of **much debate** in the academia and whether it is a useful tool to improve the quality of teaching or just a mechanism that leads _lower teaching standards_ (and _grade inflation_ ). If you want to read more about this debate, see the articles I posted at the bottom.
 
 The fact is that the Course Survey is **used to evaluate us, academic staff, in our teaching**. It is possibly the main evaluation source. The Course Survey gives, in the end, a_"Good Teaching Score" (GTS). The GTS ranges from 0 (bad) to 100 (excellent). The **average across Computer Science is around 78 (or 3.94 out of 5)**, with highest courses scoring between 90+ (or 4.5+ out of 5).
 
@@ -104,6 +133,39 @@ Finally, if you are interested in education in general, and university and unive
 * [_What students really think of the university_](http://tinyurl.com/lrdem76). Big Ideas - ABC Radio National (Australian Broadcasting Corporation)
 
 I think as a University student and future graduate, you should know about all this, be interested, and form your own informed opinion. _Your journey at uni should be much more than collecting credits and learning predicate logic!_ **_Enjoy it!_**
+
+
+## I want to discuss something face-to-face, can I?
+
+I am very happy to talk to you face-to-face and without a keyboard in the middle! That is particularly important when the matter is personal and “difficult”. Please send me an email and we will arrange an appointment to discuss something particular and we’ll try to work it out.
+
+However, if what you are after is technical support with the course, then you should first use the workshop sessions and the drop-in lab sessions when available.
+
+
+## I am enrolled in COSC2973 (UGRD) but my Canvas says COSC2780 (PGRD). Is everything OK?
+
+Yes, no need to worry. This is just a Canvas "hack" for cross-listed courses. We maintain only one site (COSC2780's one), but everybody in the course can access it. No problem, come and enjoy! ;-)
+
+## I enrolled late in the course, can you explain me about X, Y, and Z about the course? What should I do now?
+
+First of all, I assume you have discussed your late enrollment with your Program Manager. This is important. We assume students have been diligent beforehand and are fully ready and enrolled at least in Week 0, if not before.
+
+Enrolling late means that you have lost content and information about the course, and possibly assessments. This is fine as long as you **got the OK of your Program Manager** and you take **full responsibility** of your late entering to the course, _without shifting the burden to the teaching staff_.
+
+Think about it: joining a course in week 2 or 3 is like getting 15' late to a meeting with lots of people: you do it with care, trying not to bother others, and assuming _full responsibility_ for having arrived "late". Would you stop the meeting and ask: _"can you please tell me what you have been discussing so far?"_ Surely not... ;-)
+
+So this means that:
+
+1. The teaching staff will not go over the course logistics and information on a per-student basis when the student has joined the course late (and lost the first week of information and course overview).
+   - This means you would have to gather the information provided in the first weeks by yourself, by reading the online course pages/information, parsing all relevant forum posts, watching the videos and recordings. You would probably benefit from talking to other fellow students who are in sync with the course.
+   - Please, do not ask the teaching staff to go over the course details _again_, but if you have to, please do it _after_ you have processed everything and do it _in person_ in lectorials, tutorials, consultation time. This would show that you really care and put a legitimate effort to catch-up (and hence the teaching staff will be more sympathetic). :-)
+2. You will have to catch-up with the technical content of the course.  This is an intense course and there is significant reading allocated to each week, starting from week 1 itself. This means you would have to put significant effort to sync with the course.
+   - Entering in week 2+ should be doable with effort; after that would be very challenging and risk.
+3. You are not entitled to any extension or re-do of assessments run or distributed already when you enrolled.
+
+In summary, the course is very intense, even for those starting on time, and every week matters. I am OK if you join late after discussing with your PM, as long as you **take full responsibility** of such late start. Of course I am also OK with students contacting me before formally enrolled and while they are waiting for administrative process to conclude; this will allow students to stay in sync with the course until all paper-work is sorted out.
+
+Hope this is clear and all the best in the course!
 
 
 ## I have a question about the course, but it is not here!
@@ -200,7 +262,11 @@ At this level, one important skill---a very important one---is to be able to han
 
 ## Can I ask questions on an assignment/assessment in the forum?
 
-Please refer above question _"[Posting about assessments](https://docs.google.com/document/d/1HdrY91LIPRZOEni_jsCwmN8Oc8MrUzljen6qHzbtQeU/edit#heading=h.nj8m4hp7jeo2)"_ in the Discussion Forum FAQ.
+Of course, but please check the document _"[Posting about assessments](https://docs.google.com/document/d/1HdrY91LIPRZOEni_jsCwmN8Oc8MrUzljen6qHzbtQeU/edit#heading=h.nj8m4hp7jeo2)"_ to make sure you are doing it in the appropriate way.
+
+## Are assessments individual or team-based?
+
+Both. The 2024 will have individual component assessment components (participation, presentation, assignment project 1) as well as a team-based assessment (course project).
 
 ## Academic Integrity? What is that?
 
@@ -214,7 +280,48 @@ Said so, here are some resources:
 RMIT’s Student Conduct policy requires that students abide by the academic integrity expectations set out in the:
 
 * [Student Charter](https://policies.rmit.edu.au/download.php?id=74&version=1&associated), and
-* [Statement of Student Responsibilities](https://policies.rmit.edu.au/download.php?id=75&version=1&associated) .
+* [Statement of Student Responsibilities](https://policies.rmit.edu.au/download.php?id=75&version=1&associated).
+
+
+## In a code assignment/project, how do I make sure I do not go against academic integrity?
+
+Good one! This deserves its own separate answer [here](CODE-INTEGRITY.md).
+
+
+## I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get a 2-3 day extension?
+
+We have 200+ students and therefore lots of students could claim time constraints for multiple reasons. Besides the unmanageable workload that this would imply (reviewing and tracking each case, marking them at different times, different releases, etc.), I am _not able/allowed to arbitrarily judge_ which cases are OK and which ones are not: I would undoubtedly be making mistakes and hence treating students differently, _which can put me in a very risky situation due to fairness issues_.
+
+So, extensions are reserved to _extreme cases that are totally outside the control of the student_, such as health issues.
+
+We expect students enrolled in the course to _have arranged all their other commitments_ (e.g., work, courses, family, trips, etc.) beforehand to make sure they can carry out the course _under the planned schedule_.
+
+Also, we note that the difficulty of each assessment has been planned to be achievable within the time-frame, so claims about the difficulty of the task will not be entertained wrt extensions. Pushing one deadline for many students will not only complicate the execution of the course, but will put students in a more difficult situation for upcoming (more demanding) assessments.
+
+Finally, because of the nature of project assessments and the quick release of results, any SPC will probably be in the form of an **Equivalent Assessment**, that is, another _ assessment later on that will assess the same content but possibly in a different way. In most cases this will involve a pre-arranged in-person 1-2hrs closed-book assessment with the instructor (e.g., a set of exercises to complete).
+
+## Can I submit late? What is the penalty?
+
+Yes, for assignment projects only (not timed and timetabled assessments), you can submit late with, albeit with a penalty. Assignment projects received late and without prior extension approval or special consideration will be penalised by a deduction of 10% of the total score possible per calendar day late for that assessment.
+
+Please note that late submissions are only allowed to assignments and projects, not for timed and timetabled assessments (e.g., in class quizzes, challenge exercises, or take-home exercises). These must be done during the time-frame allowed and no late submission is permitted.
+
+## What is the policy on Special Consideration (SPC)?
+
+The dates of all assessments in this course are given well in advance. Plan early your work around your commitments and workload, start on the assessments early, and submit them substantially before the deadline, preferably at least one or two days before. Submitting close to the deadline could be risky and you may fail to submit on time, for example due to loss of Internet, laptop problems, server delays, heavy workload, late enrolment, external commitments, etc
+
+However, if you know you will be unable to complete an assignment due to illness or personal circumstances outside of your control, please contact your lecturer immediately for special consideration. Evidence will be required. In many cases, though, I cannot grant unilateral special considerations and you may need to go through RMIT formal process for [Special Consideration (SPC)](http://www.rmit.edu.au/students/specialconsideration).
+
+Each request will be considered on an individual basis. If the request is approved, the deadline for the assignment will be extended. If the request is denied and the assessment missed, you will unfortunately receive a 0 for that assessment.
+
+Please note that while no SPC will be granted frivolously, any request received close to the assessment date (or after the date!) will generally not be accepted except in the most extreme circumstances. This is to encourage students to plan days and weeks ahead, and to discourage last minute pleas for help.
+
+
+## I have a SPC for a project, how does it work?
+
+It depends. If the SPC provides a short extension (less than a week), then you will just need to submit under the new (extended) deadline.
+
+If however the SPC cannot be granted under a short extension, then the assessment will be carried out as an _Equivalent Assessment_. An Equivalent Assessment covers the same content and at the same expectations, but can be done in a different format. In most cases, an Equivalent Assessment will involve solving a set of precise exercises on paper with the instructor on campus. The instructor will set the date/time and location and the student must make sure they are made themselves available for it.
 
 # TECHNICAL
 
