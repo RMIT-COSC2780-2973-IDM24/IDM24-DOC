@@ -36,6 +36,7 @@ As any FAQ page, this page is always "under construction”. As we realize that 
   - [I was never asked these questions!](#i-was-never-asked-these-questions)
   - [Can I ask questions on an assignment/assessment in the forum?](#can-i-ask-questions-on-an-assignmentassessment-in-the-forum)
   - [Are assessments individual or team-based?](#are-assessments-individual-or-team-based)
+  - [Can I do the assessments without going to class?](#can-i-do-the-assessments-without-going-to-class)
   - [Academic Integrity? What is that?](#academic-integrity-what-is-that)
   - [In a code assignment/project, how do I make sure I do not go against academic integrity?](#in-a-code-assignmentproject-how-do-i-make-sure-i-do-not-go-against-academic-integrity)
   - [I am very busy with other commitments (work, other subjects, travel, etc.) and may not be able to make the deadline, can I get a 2-3 day extension?](#i-am-very-busy-with-other-commitments-work-other-subjects-travel-etc-and-may-not-be-able-to-make-the-deadline-can-i-get-a-2-3-day-extension)
@@ -63,7 +64,9 @@ Of course, if you cannot find your question here, then you are invited to post i
 
 ## Attendance: do I need to attend workshops?
 
-**YES!** This is a <span style="text-decoration:underline;">research-oriented seminar-style</span> advanced course, which means it requires on campus attendance to workshops.
+**YES!** This is a _research-oriented seminar-style_ advanced course, which means it requires on campus attendance to workshops. This is already specified in the [Course Overview](http://www1.rmit.edu.au/courses/COSC29732410):
+
+> Being a seminar-style course, students are expected to prepare for and actively participate in-person in class via discussions, presentations, and exercises (worth 20% marks overall). Thus, while a minimum attendance standard is not compulsory, non-attendance may seriously jeopardise participation marks. 
 
 Workshops are not lectures where the instructor delivers the content. Instead, we discuss together each week content at workshops, we do presentations, execute drills, etc. So, on campus personal presence is necessary. Also, a component of the assessment is assigned to _participation_ during workshops, presentation, and leadership. To participate actively will surely require being there. :-)
 
@@ -267,6 +270,15 @@ Of course, but please check the document _"[Posting about assessments](https://d
 ## Are assessments individual or team-based?
 
 Both. The 2024 will have individual component assessment components (participation, presentation, assignment project 1) as well as a team-based assessment (course project).
+
+## Can I do the assessments without going to class?
+
+Some yes, but some not. You will certainly work outside class on your Programming assignments and projects, though there will also be time during workshops to work on them and get support from the teacher.
+
+However other assessments in the course will require being in-person, such as preparation/participation quizzes, participation in discussions, presentations, and workshop exercises. These will also be available to students participating in-person in the class. Please refer to the [Attendance: do I need to attend workshops?](#attendance-do-i-need-to-attend-workshops) question.
+
+
+
 
 ## Academic Integrity? What is that?
 
