@@ -12,6 +12,7 @@
     - [Efficiency](#efficiency)
     - [Duplicate answers](#duplicate-answers)
     - [Style](#style)
+  - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
 
 
 ## General Prolog Guidelines
@@ -144,3 +145,71 @@ In general, you should eliminate duplicates whenever you can. Sometimes, however
 * Pick intuitive names for your predicates and arguments.
 * good naming convention for a helper predicate used by a predicate `pred` is `pred_aux` (`aux` stands for"auxiliary"). This makes it easier to understand what it is used for.
 
+
+## On evaluating and comparing arithmetic expressions: the `is/2` construct
+
+Be mindful how Prolog evaluates arithmetic expressions as it is different from languages like Python or Java. An arithmetic expression is just a (compound) term and, unlike Python for example, Prolog will not evaluate them when part of an argument in a predicate. For example:
+
+```prolog
+?- number(2).
+true.
+
+?- number(3-1).
+false.
+
+?- functor(3-1,X,Y).
+X =  (-),
+Y = 2.
+```
+
+Here `3-1` is NOT `3`, it is the term `3-1` (with functor `-` and arity 2!).
+
+So, to do evaluation of an expression, you should use the [`is/2`](https://www.swi-prolog.org/pldoc/doc_for?object=(is)/2) built-in construct. So, instead of writing things like `distance(X, Y, N-1)`, you should instead write `distance(X, Y, N2), N2 is N-1`. It is very important that at the time of execution of an `is/2` goal, the expression is ground and there are no variables:
+
+
+```prolog
+?- N is (3+2)*8.
+N = 40.
+
+?- X = 8, N is (3+2)*X.
+X = 8,
+N = 40.
+
+?- N is (3+2)*X.
+ERROR: Arguments are not sufficiently instantiated
+ERROR: In:
+ERROR:   [10] _6050 is (3+2)*_6058
+ERROR:    [9] toplevel_call('<garbage_collected>') at /usr/lib/swi-prolog/boot/toplevel.pl:1158
+?- 
+```
+
+See how in the last goal, the `X` is still a variable, so Prolog is not able to evaluate a non-ground  expression. _Can you understand why?_
+
+Finally, note that the same above issues apply when using comparison relations, like `>` or `<`: the two sides cannot be uninstantiated and they will not be evaluated automatically:
+
+```prolog
+?- 2 < X.
+ERROR: Arguments are not sufficiently instantiated
+ERROR: In:
+ERROR:   [10] 2 <_2596
+ERROR:    [9] toplevel_call(user:user: ...) at /usr/lib/swi-prolog/boot/toplevel.pl:1158
+
+?- 2+3 > 0.
+true.
+
+?- X is 2+3, X > 0.
+X = 5.
+```
+
+The only evaluating comparison operator that is provided is `=:=/2` which is True if two expressions evaluate to the same number. This could be simpler than using `is/2` to evaluate first and then `=/2` to compare later:
+
+```prolog
+?- 2+5 =:= 3+4.
+true.
+
+?- 2+5 = 3+4.
+false.
+
+?- X1 is 2+5, X2 is 3+4, X1 = X2.
+X1 = X2, X2 = 7.
+```
