@@ -13,6 +13,7 @@
     - [Duplicate answers](#duplicate-answers)
     - [Style](#style)
   - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
+  - [Unit Testing in SWI-Prolog](#unit-testing-in-swi-prolog)
 
 
 ## General Prolog Guidelines
@@ -213,3 +214,92 @@ false.
 ?- X1 is 2+5, X2 is 3+4, X1 = X2.
 X1 = X2, X2 = 7.
 ```
+
+
+## Unit Testing in SWI-Prolog
+
+Many workshop exercises include testing cases that can be used against your solution. To do this, we rely on SWI-Prolog Unit Testing framework library [plunit](https://www.swi-prolog.org/pldoc/doc_for?object=section(%27packages/plunit.html%27)).
+
+
+To run a set the test cases, consult your solution file (in this case, `family.pl`) and the file defining the test cases (in our case `test/test_02_03.pl`), and then run the built-in predicate goal `run_tests/0`, which will run al test cases:
+
+```shell
+$ swipl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- ['family.pl'].
+true.
+
+?- ['test/test_02_03.pl'].
+true.
+
+?- run_tests.
+% PL-Unit: father ...... done
+% PL-Unit: mother ...... done
+% PL-Unit: grandmother ...... done
+% PL-Unit: grandfather ...... done
+% PL-Unit: sister ..... done
+% PL-Unit: aunt ..... done
+% PL-Unit: uncle ... done
+% PL-Unit: ancestor ..... done
+% All 42 tests passed
+true.
+```
+
+You can run also a specific set of test cases. For example, to run just the `sister` test set:
+
+```prolog
+?- run_tests(sister).
+% PL-Unit: sister ..... done
+% All 5 tests passed
+true.
+```
+
+To avoid manually consulting the relevant files, we can start SWI-Prolog with files to be consulted at start:
+
+```shell
+$ swipl family.pl test/test_02_03.pl
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+?- run_tests.
+[42/42] ancestor:ancestor_4 ................................................... passed (0.000 sec)
+% PL-Unit: father ...... done
+% PL-Unit: mother ...... done
+% PL-Unit: grandmother ...... done
+% PL-Unit: grandfather ...... done
+% PL-Unit: sister ..... done
+% PL-Unit: aunt ..... done
+% PL-Unit: uncle ... done
+% PL-Unit: ancestor ..... done
+% All 42 tests passed
+```
+
+Even more, we can also directly state the top-level goal to run when calling SWI-Prolog:
+
+```shell
+$ swipl -g run_tests -t halt family/family.pl family/test/test_02_03.pl
+% PL-Unit: father ..... passed 0.000 sec
+% PL-Unit: mother ..... passed 0.000 sec
+% PL-Unit: grandmother ..... passed 0.000 sec
+% PL-Unit: grandfather ..... passed 0.000 sec
+% PL-Unit: sister .... passed 0.000 sec
+% PL-Unit: aunt .... passed 0.000 sec
+% PL-Unit: uncle .. passed 0.000 sec
+% PL-Unit: ancestor .... passed 0.000 sec
+% All 34 tests passed
+```
+
+The `-t halt` will make SWI-Prolog exit after the goal `run_tests` has completed.
+
+You can, and probably should, add your own test cases. Study the
+[plunit](https://www.swi-prolog.org/pldoc/doc_for?object=section(%27packages/plunit.html%27)) on how to define new test cases and check the test cases already provided.
