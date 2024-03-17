@@ -15,6 +15,7 @@
   - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
   - [Unit Testing in SWI-Prolog](#unit-testing-in-swi-prolog)
     - [I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"](#i-get-error--g-run_testsdistance-append_args3-unknown-procedure-messagesto_list2)
+    - [I get warning on "Test succeeded with choicepoint", why?](#i-get-warning-on-test-succeeded-with-choicepoint-why)
 
 
 ## General Prolog Guidelines
@@ -288,7 +289,7 @@ For built-in help, use ?- help(Topic). or ?- apropos(Word).
 Even more, we can also directly state the top-level goal to run when calling SWI-Prolog:
 
 ```shell
-$ swipl -g run_tests -t halt family/family.pl family/test/test_02_03.pl
+$ swipl -g run_tests -t halt family.pl test/test_02_03.pl
 % PL-Unit: father ..... passed 0.000 sec
 % PL-Unit: mother ..... passed 0.000 sec
 % PL-Unit: grandmother ..... passed 0.000 sec
@@ -317,4 +318,29 @@ ERROR: -g run_tests: append_args/3: Unknown procedure: '$messages':to_list/2
 ```
 
 This often happens when there is no definition for the predicate being tested, in this case there is no definition for predicate `distance/3` and hence no test can be run.
+
+### I get warning on "Test succeeded with choicepoint", why?
+
+Sometimes you will see a test passing but with a warning as follows:
+
+```shell
+  % PL-Unit: grandfather ..
+  Warning: 
+      [[ EXCEPTION while printing message url('/home/runner/work/workshop-2-ssardina/workshop-2-ssardina/family/test/test_02_03.pl':96)
+         with arguments []:
+         raised: type_error(text,url('/home/runner/work/workshop-2-ssardina/workshop-2-ssardina/family/test/test_02_03.pl':96))
+      ]]
+  :
+  	PL-Unit: Test grandfather_1: Test succeeded with choicepoint
+  .... done
+  % All 7 tests passed
+```
+
+This warning is just saying that the answers returned were OK and as expected, but that the implementation left nonetheless some "choice" open to backtrack, even though they won't lead to more answers.
+
+The best fix is to make the implementation more deterministic, but sometimes it is not possible to achieve that.
+
+A very comprehensive explanation, discussion, and ways to address it can be read in the stackoverflow discussion [here](https://stackoverflow.com/questions/40711908/what-is-a-test-succeeded-with-choicepoint-warning-in-pl-unit-and-how-do-i-fix), highly recommended if you want to grasp a fine understanding of what is happening here... :-)
+
+
 
