@@ -14,6 +14,7 @@
     - [Style](#style)
   - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
   - [Unit Testing in SWI-Prolog](#unit-testing-in-swi-prolog)
+    - [I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"](#i-get-error--g-run_testsdistance-append_args3-unknown-procedure-messagesto_list2)
 
 
 ## General Prolog Guidelines
@@ -303,3 +304,17 @@ The `-t halt` will make SWI-Prolog exit after the goal `run_tests` has completed
 
 You can, and probably should, add your own test cases. Study the
 [plunit](https://www.swi-prolog.org/pldoc/doc_for?object=section(%27packages/plunit.html%27)) on how to define new test cases and check the test cases already provided.
+
+### I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"
+
+For example:
+
+```shell
+$ swipl -g run_tests -t halt cs_dinner.pl test_03.pl
+% PL-Unit: distance
+% No tests to run
+ERROR: -g run_tests: append_args/3: Unknown procedure: '$messages':to_list/2
+```
+
+This often happens when there is no definition for the predicate being tested, in this case there is no definition for predicate `distance/3` and hence no test can be run.
+
