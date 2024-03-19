@@ -17,6 +17,7 @@ As any FAQ page, this page is always "under construction". As we realise that so
   - [I get `Permission denied (publickey).` from GitHub](#i-get-permission-denied-publickey-from-github)
   - [I have committed to the remote repo but I am not listed as a "contributor", why?](#i-have-committed-to-the-remote-repo-but-i-am-not-listed-as-a-contributor-why)
   - [Commits not correctly associated to my GitHub account, why?](#commits-not-correctly-associated-to-my-github-account-why)
+  - [Autograding in GitHub](#autograding-in-github)
 
 ## Git, GitHub, what is that? Where can I learn it?
 
@@ -151,3 +152,18 @@ Please check [doc in GitHub](https://docs.github.com/en/github/committing-change
 
 Please fix it so we can know the commit was *yous*. Otherwise we may get your contributions wrong and risk getting lower marks or delaying your marking.
 
+## Autograding in GitHub
+
+When you push to your `main` branch, GitHub will run the tests and award the marks for the various exercises. You can see the result of the last commit (whether it fully passed or failed some test):
+
+![autograding in GH](imgs/gh_autograding_00.png)
+
+If you click on the mark (tick or cross) or go to Actions, you can see the autograding run:
+
+![autograding in GH](imgs/gh_autograding_01.png)
+
+If you open the `education/autograding@v1` section, a perfect solution will look as follows:
+
+![autograding in GH](imgs/gh_autograding_02.png)
+
+Isn't this cool? :heart_eyes:
