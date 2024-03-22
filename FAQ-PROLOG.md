@@ -10,8 +10,9 @@
     - [Strings as atoms](#strings-as-atoms)
     - [Indentation](#indentation)
     - [Efficiency](#efficiency)
-    - [Duplicate answers](#duplicate-answers)
+    - [Duplicate redudant answers](#duplicate-redudant-answers)
     - [Style](#style)
+    - [Repeated code](#repeated-code)
   - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
   - [Unit Testing in SWI-Prolog](#unit-testing-in-swi-prolog)
     - [I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"](#i-get-error--g-run_testsdistance-append_args3-unknown-procedure-messagesto_list2)
@@ -137,17 +138,27 @@ complex_rule(A, B, C, D, E, F) :-
 
 Unless specifically stressed, you don't have to go out of your way for optimization purposes. However, the code must aim to be reasonably efficient. You should not be traversing the lists unnecessarily, for example. Basically, without doing crazy tricks, your code should aim to be efficient.
 
-### Duplicate answers
+### Duplicate redudant answers
 
 In general, you should eliminate duplicates whenever you can. Sometimes, however, you may not be able to eliminate all duplicates, and that's OK. In each query, you should make a decision as to whether or not it is possible to eliminate duplicates.  Sometimes there are different causes of duplicates, and you can deal with one, but not the other. It is part of the task to figure it out when it is doable and when it is not.
 
 ### Style
 
 * Simpler, shorter code is generally best.
-* Try to use unification variables when possible; for example `swap([A,B], [B,A]).` rather than `swap(L1, L2) :- L1=[A,B], L2=[B,A].`
+* Try to use unification variables when possible; for example, write 
+    ```prolog
+    swap([A,B], [B,A]).
+    ```
+    rather than
+    ```prolog
+    swap(L1, L2) :- L1 = [A,B], L2 = [B,A].
+    ```
 * Pick intuitive names for your predicates and arguments.
 * good naming convention for a helper predicate used by a predicate `pred` is `pred_aux` (`aux` stands for"auxiliary"). This makes it easier to understand what it is used for.
 
+### Repeated code
+
+You should avoid repeating code and having separate rules that look almost identical. Instead, try to  have one piece of "main logic," and the different cases should be handles in a helper predicate, for example.
 
 ## On evaluating and comparing arithmetic expressions: the `is/2` construct
 
