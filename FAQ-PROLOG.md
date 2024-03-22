@@ -63,6 +63,15 @@ inc(FirstNr, Result) :- Result is Firstnr + 1.
 
 Here, both `FirstNr`and `Firstnr` will be reported as singleton variables! This is very useful information because it often helps you finding typos, a common source of bugs in Prolog, as shown above (`Firstnr` should have been `FirstNr`).
 
+SWI-Prolog will point out any singleton variables you have:
+
+```shell
+Warning: flight_system.pl:181:
+Warning:    Singleton variables: [Y]
+```
+
+Take those warnings seriously as soon as they come up, do not just ignore them: check if it signals a bug and resole the issue so the warning is gone.
+
 ### Use of `;/2`
 
 It is generally OK to use `;/2` as part of a simple _if-then-else_ construct when the whole logic is simple, for example to set a variable:
