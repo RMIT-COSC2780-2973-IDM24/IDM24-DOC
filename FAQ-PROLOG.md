@@ -17,6 +17,7 @@
   - [Unit Testing in SWI-Prolog](#unit-testing-in-swi-prolog)
     - [I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"](#i-get-error--g-run_testsdistance-append_args3-unknown-procedure-messagesto_list2)
     - [I get warning on "Test succeeded with choicepoint", why?](#i-get-warning-on-test-succeeded-with-choicepoint-why)
+  - [Why do I get  "`Warning: Clauses of a/1 are not together in the source-file`" warning?](#why-do-i-get--warning-clauses-of-a1-are-not-together-in-the-source-file-warning)
 
 
 ## General Prolog Guidelines
@@ -47,8 +48,7 @@ and just consult `main.pl`.
 
 ### Singleton variables
 
-To get more marks and more robust code, we strongly suggest to **avoid singleton variables!** A singleton variable is a variable that only occurs once in the arguments or the body
-of a predicate and is thus useless. For example in the following two definitions:
+To get more marks and more robust code, we strongly suggest to **avoid singleton variables!** A singleton variable is a variable that only occurs once in the arguments or the body of a predicate and is thus useless. For example in the following two definitions:
 
 ```prolog
 calculate(X, Y, Z) :- Z is X + 2.
@@ -71,6 +71,9 @@ Warning:    Singleton variables: [Y]
 ```
 
 Take those warnings seriously as soon as they come up, do not just ignore them: check if it signals a bug and resole the issue so the warning is gone.
+
+**NOTE:** one can change tell SWI-Prolog to _not_ check for singletons via [style_check/1](https://www.swi-prolog.org/pldoc/doc_for?object=style_check/1). However this is NOT recommended for the reasons stated above and should NOT be done in your project assignments unless given explicit written permission from teaching staff.
+
 
 ### Use of `;/2`
 
@@ -363,4 +366,10 @@ The best fix is to make the implementation more deterministic, but sometimes it 
 A very comprehensive explanation, discussion, and ways to address it can be read in the stackoverflow discussion [here](https://stackoverflow.com/questions/40711908/what-is-a-test-succeeded-with-choicepoint-warning-in-pl-unit-and-how-do-i-fix), highly recommended if you want to grasp a fine understanding of what is happening here... :-)
 
 
+
+## Why do I get  "`Warning: Clauses of a/1 are not together in the source-file`" warning?
+
+SWI-Prolog will, by default, assume that all clauses of a predicates are all together, without other predicate definitions in the middle. This makes the code more readable as everything for a predicate is "there".
+
+If you want to disable the warning for a particular predicate, use [:- discontiguous/1](https://www.swi-prolog.org/pldoc/man?predicate=discontiguous/1) directive.
 
