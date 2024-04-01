@@ -18,6 +18,8 @@ As any FAQ page, this page is always "under construction". As we realise that so
   - [I have committed to the remote repo but I am not listed as a "contributor", why?](#i-have-committed-to-the-remote-repo-but-i-am-not-listed-as-a-contributor-why)
   - [Commits not correctly associated to my GitHub account, why?](#commits-not-correctly-associated-to-my-github-account-why)
   - [Autograding in GitHub](#autograding-in-github)
+  - [Where are the repos for my course?](#where-are-the-repos-for-my-course)
+  
 
 ## Git, GitHub, what is that? Where can I learn it?
 
@@ -152,6 +154,7 @@ Please check [doc in GitHub](https://docs.github.com/en/github/committing-change
 
 Please fix it so we can know the commit was *yous*. Otherwise we may get your contributions wrong and risk getting lower marks or delaying your marking.
 
+
 ## Autograding in GitHub
 
 When you push to your `main` branch, GitHub will run the tests and award the marks for the various exercises. You can see the result of the last commit (whether it fully passed or failed some test):
@@ -167,3 +170,11 @@ If you open the `education/autograding@v1` section, a perfect solution will look
 ![autograding in GH](imgs/gh_autograding_02.png)
 
 Isn't this cool? :heart_eyes:
+
+## Where are the repos for my course?
+
+During the course you will fork many GitHub repos, for workshop exercises and assessments. You can access your course repos by going to the course organisation URL:
+
+![](imgs/gh_course_student.png)
+
+Note you also have access to any public repo, like the FAQ repo.
