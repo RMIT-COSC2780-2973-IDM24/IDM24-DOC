@@ -4,6 +4,8 @@
   - [Updates to the spec](#updates-to-the-spec)
   - [Can I use built-in predicate `P/n`?](#can-i-use-built-in-predicate-pn)
   - [How can I compute \& carry "so-far" results?](#how-can-i-compute--carry-so-far-results)
+  - [Can there be decimals in duration and price of flight legs?](#can-there-be-decimals-in-duration-and-price-of-flight-legs)
+  - [What does "connected in exactly two flight legs" mean?](#what-does-connected-in-exactly-two-flight-legs-mean)
 
 ## Updates to the spec
 
@@ -17,11 +19,11 @@ This project assignment can be solved neatly using plain basic Prolog built-in p
 
 If in doubt always ask in the forum. Some other predicates that you shall not use are:
 
-- `table/1`, `order_by/1`.
+- `table/1`, `order_by/1`, `sort/2`
 
 Some predicates that you can use as they are still basic are:
 
-- `nth0/3`, `nth1/3`, `list_to_set/2`
+- `nth0/3`, `nth1/3`
 
 
 ## How can I compute & carry "so-far" results?
@@ -46,3 +48,10 @@ Check a run:
 R = 10.
 ```
 
+## Can there be decimals in duration and price of flight legs?
+
+No. Duration (in minutes) and price (in $) are always _integers_.
+
+## What does "connected in exactly two flight legs" mean?
+
+It means that you _can_ flight from A to B using two flight legs, regardless whether you can also fly from A to B with just one leg (or with more than two).
