@@ -11,6 +11,7 @@
 
 ## Updates to the spec
 
+- [#64](https://edstem.org/au/courses/15661/discussion/1871078): collects a few clarifications from several posts.
 - [#29](https://edstem.org/au/courses/15661/discussion/1850209): reversible assumption on flight links only applies to the particular network in Exercise 1.
 - [#28](https://edstem.org/au/courses/15661/discussion/1849446): clarification on pair of cities not as lists; so predicate arity is correct in spec.
 
