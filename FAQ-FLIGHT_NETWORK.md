@@ -6,6 +6,7 @@
   - [How can I compute \& carry "so-far" results?](#how-can-i-compute--carry-so-far-results)
   - [Can there be decimals in duration and price of flight legs?](#can-there-be-decimals-in-duration-and-price-of-flight-legs)
   - [What does "connected in exactly two flight legs" mean?](#what-does-connected-in-exactly-two-flight-legs-mean)
+  - [Exercise 3: should the tools also check for proper flight paths?](#exercise-3-should-the-tools-also-check-for-proper-flight-paths)
 
 ## Updates to the spec
 
@@ -55,3 +56,14 @@ No. Duration (in minutes) and price (in $) are always _integers_.
 ## What does "connected in exactly two flight legs" mean?
 
 It means that you _can_ flight from A to B using two flight legs, regardless whether you can also fly from A to B with just one leg (or with more than two).
+
+
+## Exercise 3: should the tools also check for proper flight paths?
+
+No.
+
+You can assume that the `Path` given is always a proper legal flight path, that is, it passes/succeeds on `flight_path/1`. 😃
+
+This is for all predicates in the exercise, namely, `path_price/2`, `path_duration/2`, `path_airlines/2`, `path_reverse/2`.
+
+If one were to use it somewhere, one would first check that the path is a proper correct flight path, and then use these tools.
