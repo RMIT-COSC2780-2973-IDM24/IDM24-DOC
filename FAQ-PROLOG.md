@@ -10,7 +10,7 @@
     - [Strings as atoms](#strings-as-atoms)
     - [Indentation](#indentation)
     - [Efficiency](#efficiency)
-    - [Duplicate redudant answers](#duplicate-redudant-answers)
+    - [Duplicate redundant answers](#duplicate-redundant-answers)
     - [Style](#style)
     - [Repeated code](#repeated-code)
   - [On evaluating and comparing arithmetic expressions: the `is/2` construct](#on-evaluating-and-comparing-arithmetic-expressions-the-is2-construct)
@@ -18,6 +18,7 @@
     - [I get "`ERROR: -g run_tests(distance): append_args/3: Unknown procedure: '$messages':to_list/2`"](#i-get-error--g-run_testsdistance-append_args3-unknown-procedure-messagesto_list2)
     - [I get warning on "Test succeeded with choicepoint", why?](#i-get-warning-on-test-succeeded-with-choicepoint-why)
   - [Why do I get  "`Warning: Clauses of a/1 are not together in the source-file`" warning?](#why-do-i-get--warning-clauses-of-a1-are-not-together-in-the-source-file-warning)
+  - [Variables in all-solution predicates?](#variables-in-all-solution-predicates)
 
 
 ## General Prolog Guidelines
@@ -150,7 +151,7 @@ complex_rule(A, B, C, D, E, F) :-
 
 Unless specifically stressed, you don't have to go out of your way for optimization purposes. However, the code must aim to be reasonably efficient. You should not be traversing the lists unnecessarily, for example. Basically, without doing crazy tricks, your code should aim to be efficient.
 
-### Duplicate redudant answers
+### Duplicate redundant answers
 
 In general, you should eliminate duplicates whenever you can. Sometimes, however, you may not be able to eliminate all duplicates, and that's OK. In each query, you should make a decision as to whether or not it is possible to eliminate duplicates.  Sometimes there are different causes of duplicates, and you can deal with one, but not the other. It is part of the task to figure it out when it is doable and when it is not.
 
@@ -365,11 +366,55 @@ The best fix is to make the implementation more deterministic, but sometimes it 
 
 A very comprehensive explanation, discussion, and ways to address it can be read in the stackoverflow discussion [here](https://stackoverflow.com/questions/40711908/what-is-a-test-succeeded-with-choicepoint-warning-in-pl-unit-and-how-do-i-fix), highly recommended if you want to grasp a fine understanding of what is happening here... :-)
 
-
-
 ## Why do I get  "`Warning: Clauses of a/1 are not together in the source-file`" warning?
 
 SWI-Prolog will, by default, assume that all clauses of a predicates are all together, without other predicate definitions in the middle. This makes the code more readable as everything for a predicate is "there".
 
 If you want to disable the warning for a particular predicate, use [:- discontiguous/1](https://www.swi-prolog.org/pldoc/man?predicate=discontiguous/1) directive.
+
+## Variables in all-solution predicates?
+
+
+Free variables behave differently across `findall/3`, `bagof/3`, and `setof/3`. This is important to understand when one is trying to extract all the variables in a term.
+
+Consider this query:
+
+```prolog
+?- findall(X, member(X, [A, B, C]), L), A = 1.
+A = 1,
+L = [_, _, _].
+```
+
+You can see that the list `L` constructed by `findall/3` does NOT contain the actual variable `A` or otherwise `L = [1, _, _]`.
+
+This is because, as explained in [`findall/3` documentation](https://www.swi-prolog.org/pldoc/doc_for?object=findall/3), `findall/3` is like `bagof/3` with _all the free variables mentioned in the goal are assumed to be existentially quantified_ (that is, we don't care about them as long as there is a binding for them making the goal true):
+
+```prolog
+?- bagof(X, A^B^C^member(X, [A, B, C]), L), A=1.
+A = 1,
+L = [_, _, _].
+```
+
+The point is that the variable `A`  in `A=1` is NOT the same as the one appearing in the goal of `bagof/3`, as that one is under the existential quantification scope so it is local to `bagof/3`.
+
+Contrast this with `bagfof/3` without quantifying on the free variables:
+
+```prolog
+?- bagof(X, member(X, [A, B, C]), L), A=1.
+A = 1,
+L = [1, B, C].
+```
+
+Then we we get all the results collected in `L` due to full backtracking of the goal in question, namely, `member(X, [A, B, C]))`.
+
+Finally, consider this more complex run:
+
+```prolog
+?- bagof(X, B^(member(X, [A, B, C]), member(B, [hello, bye])), L), A=1, B=2.
+B = 2,
+A = 1,
+L = [1, 1, hello, bye, C, C]
+```
+
+The reason why `hello` and `by` appear in `L`, is because `X` is matched with `B` in the first `member/2`, and then `B` to each of the two terms. Since the second `member/2` succeeds twice, we get also copies of variables `A` and `C` in `L`, as `bagof/3` collects all instances of the template (`X` here) for each success of the goal.
 
